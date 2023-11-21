@@ -47,6 +47,14 @@
   "dependencies": {
     "react": "^18.2.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nekzus/hacker-effect-text"
+  },
+  "bugs": {
+    "url": "https://github.com/Nekzus/hacker-effect-text/issues"
+  },
+  "homepage": "https://github.com/Nekzus/hacker-effect-text",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
