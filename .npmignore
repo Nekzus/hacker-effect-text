@@ -1,0 +1,38 @@
+# System-generated files and directories
+node_modules/
+dist/
+.cache/
+.env
+
+# Local development configuration files
+config.js
+config.local.js
+
+# Log files and error logs
+logs/
+*.log
+
+# Temporary files
+*.tmp
+
+# Editor-specific directories
+.vscode/
+.idea/
+
+# Files and directories related to testing and development
+__tests__/
+test/
+tests/
+demo/
+
+# Configuration files
+.eslintrc.*
+.prettierrc
+
+# GitHub-specific files and directories
+.github/
+
+# Exclude .gitignore
+.gitignore
+
+
