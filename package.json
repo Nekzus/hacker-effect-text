@@ -1,6 +1,6 @@
 {
   "name": "react-hacker-effect",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Hacker Text Animation",
   "main": "index.ts",
   "engines": {
@@ -36,7 +36,7 @@
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",
-    "semantic-release": "^22.0.5"
+    "semantic-release": "^22.0.8"
   },
   "scripts": {
     "start": "webpack --mode development --watch",
