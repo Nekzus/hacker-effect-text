@@ -1,5 +1,10 @@
 # React Hacker Effect
 
+[![Github Workflow](https://github.com/nekzus/hacker-effect-text/actions/workflows/publish.yml/badge.svg?event=push)](https://github.com/Nekzus/hacker-effect-text/actions/workflows/publish.yml)
+[![npm-version](https://img.shields.io/npm/v/react-hacker-effect.svg)](https://www.npmjs.com/package/react-hacker-effect)
+[![npm-month](https://img.shields.io/npm/dm/react-hacker-effect.svg)](https://www.npmjs.com/package/react-hacker-effect)
+[![npm-total](https://img.shields.io/npm/dt/react-hacker-effect.svg?style=flat)](https://www.npmjs.com/package/react-hacker-effect)
+
 `react-hacker-effect` is a React library designed to bring an immersive hacker-themed animated text effect to your user interface. This library provides customizable options, allowing you to seamlessly integrate dynamic and engaging text animations into your React applications.
 
 ## Installation
@@ -67,6 +72,10 @@ Elevate your text presentation with a smooth transition and uppercase styling:
 </HackerEffectText>
 ```
 In this example, the text smoothly transforms from "Access Granted" to "Welcome to the System" with a hacker-inspired animation, all displayed in uppercase.
+
+## Codesandbox
+
+[Link](https://codesandbox.io/p/devbox/react-hacker-effect-yw5ykh)
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
