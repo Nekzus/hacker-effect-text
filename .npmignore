@@ -6,6 +6,8 @@ node_modules/
 # Local development configuration files
 config.js
 config.local.js
+tsconfig.json
+rollup.config.js
 
 # Log files and error logs
 logs/
