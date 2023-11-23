@@ -1,5 +1,5 @@
 {
-  "name": "react-hacker-effect",
+  "name": "@nekzus/react-hacker-effect",
   "version": "0.0.0-development",
   "description": "Hacker Text Animation",
   "main": "build/index.js",
@@ -45,7 +45,8 @@
     "typescript": "^5.3.2"
   },
   "peerDependencies": {
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "scripts": {
     "start": "parcel --out-dir playground-build ./src/root/index.html",

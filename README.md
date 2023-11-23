@@ -1,9 +1,9 @@
 # React Hacker Effect
 
 [![Github Workflow](https://github.com/nekzus/hacker-effect-text/actions/workflows/publish.yml/badge.svg?event=push)](https://github.com/Nekzus/hacker-effect-text/actions/workflows/publish.yml)
-[![npm-version](https://img.shields.io/npm/v/react-hacker-effect.svg)](https://www.npmjs.com/package/react-hacker-effect)
-[![npm-month](https://img.shields.io/npm/dm/react-hacker-effect.svg)](https://www.npmjs.com/package/react-hacker-effect)
-[![npm-total](https://img.shields.io/npm/dt/react-hacker-effect.svg?style=flat)](https://www.npmjs.com/package/react-hacker-effect)
+[![npm-version](https://img.shields.io/npm/v/@nekzus/react-hacker-effect.svg)](https://www.npmjs.com/package/@nekzus/react-hacker-effect)
+[![npm-month](https://img.shields.io/npm/dm/@nekzus/react-hacker-effect.svg)](https://www.npmjs.com/package/@nekzus/react-hacker-effect)
+[![npm-total](https://img.shields.io/npm/dt/@nekzus/react-hacker-effect.svg?style=flat)](https://www.npmjs.com/package/@nekzus/react-hacker-effect)
 
 `react-hacker-effect` is a React library designed to bring an immersive hacker-themed animated text effect to your user interface. This library provides customizable options, allowing you to seamlessly integrate dynamic and engaging text animations into your React applications.
 
@@ -12,7 +12,7 @@
 To install the library using npm, run the following command:
 
 ```bash
-npm install react-hacker-effect
+npm install @nekzus/react-hacker-effect
 ```
 
 ## Usage
