@@ -22,7 +22,7 @@ The HackerEffectText component is the gateway to infusing a hacker-inspired anim
 
 ```jsx
 import React from 'react';
-import { HackerEffectText } from 'react-hacker-effect';
+import { HackerEffectText } from '@nekzus/react-hacker-effect';
 
 const MyComponent = () => {
   return (

@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+'use strict';
+
+var React = require('react');
 
 /******************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -41,7 +43,7 @@ typeof SuppressedError === "function" ? SuppressedError : function (error, suppr
 
 var HackerEffectText = function (_a) {
     var initialValue = _a.initialValue, targetValue = _a.targetValue, children = _a.children, className = _a.className, _b = _a.capitalize, capitalize = _b === void 0 ? false : _b;
-    var _c = __read(useState(initialValue
+    var _c = __read(React.useState(initialValue
         .split("\n")
         .map(function (line) { return (capitalize ? line.toUpperCase() : line); })), 2), lines = _c[0], setLines = _c[1];
     var interval = null;
@@ -91,12 +93,12 @@ var HackerEffectText = function (_a) {
             .split("\n")
             .map(function (line) { return (capitalize ? line.toUpperCase() : line); }));
     };
-    useEffect(function () { return function () { return clearInterval(interval); }; }, [interval]);
+    React.useEffect(function () { return function () { return clearInterval(interval); }; }, [interval]);
     return React.cloneElement(children, {
         onMouseOver: handleMouseOver,
         onMouseLeave: handleMouseLeave,
     }, React.createElement("div", { className: className }, lines.map(function (line, index) { return (React.createElement("span", { key: index }, line)); })));
 };
 
-export { HackerEffectText };
-//# sourceMappingURL=index.es.js.map
+exports.HackerEffectText = HackerEffectText;
+//# sourceMappingURL=index.cjs.js.map

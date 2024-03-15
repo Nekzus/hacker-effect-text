@@ -2,12 +2,23 @@
   "name": "@nekzus/react-hacker-effect",
   "version": "0.0.0-development",
   "description": "Hacker Text Animation",
-  "main": "build/index.js",
-  "module": "build/index.es.js",
-  "types": "build/index.d.ts",
-  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.mjs",
+  "source": "src/index.ts",
+  "types": "dist/index.d.ts",
   "engines": {
     "node": ">=16"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.esm.mjs",
+      "require": "./dist/index.cjs.js",
+      "types": "./dist/index.d.ts"
+    }
   },
   "keywords": [
     "react",
