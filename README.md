@@ -26,7 +26,7 @@ import { HackerEffectText } from '@nekzus/react-hacker-effect';
 
 const MyComponent = () => {
   return (
-    <HackerEffectText initialValue="Access Granted" targetValue="Welcome to the System" capitalize>
+    <HackerEffectText initialValue="Access Granted" targetValue="Welcome to the System" uppercase>
       <div className="content-container">
         {/* Your content here */}
       </div>
@@ -35,7 +35,7 @@ const MyComponent = () => {
 };
 ```
 
-In this example, the HackerEffectText component wraps around your content, animating the transition from the initialValue ("Access Granted") to the targetValue ("Welcome to the System"). The capitalize prop is set to true, giving the text a distinct uppercase hacker aesthetic.
+In this example, the HackerEffectText component wraps around your content, animating the transition from the initialValue ("Access Granted") to the targetValue ("Welcome to the System"). The uppercase prop is set to true, giving the text a distinct uppercase hacker aesthetic.
 
 ## Props
 initialValue (required)
@@ -44,7 +44,7 @@ The initial text value for the hacker-inspired animation.
 targetValue
 Type: string
 The target text value for the animation. If provided, the animation will transition from initialValue to targetValue.
-capitalize
+uppercase
 Type: boolean
 Default: false
 If true, the text will be displayed in uppercase, enhancing the hacker-themed effect.
@@ -66,7 +66,7 @@ Apply the HackerEffectText component for a hacker-style text animation:
 Elevate your text presentation with a smooth transition and uppercase styling:
 
 ```jsx
-<HackerEffectText initialValue="Access Granted" targetValue="Welcome to the System" capitalize>
+<HackerEffectText initialValue="Access Granted" targetValue="Welcome to the System" uppercase>
   <div className="content-container">
     {/* Your content here */}
   </div>

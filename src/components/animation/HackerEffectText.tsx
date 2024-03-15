@@ -5,7 +5,7 @@ interface HackerEffectTextProps {
   targetValue?: string;
   children: ReactNode;
   className?: string;
-  capitalize?: boolean;
+  uppercase?: boolean;
 }
 
 const HackerEffectText: React.FC<HackerEffectTextProps> = ({
@@ -13,17 +13,17 @@ const HackerEffectText: React.FC<HackerEffectTextProps> = ({
   targetValue,
   children,
   className,
-  capitalize = false,
+  uppercase = false,
 }) => {
   const [lines, setLines] = useState<string[]>(
     initialValue
       .split("\n")
-      .map((line) => (capitalize ? line.toUpperCase() : line))
+      .map((line) => (uppercase ? line.toUpperCase() : line))
   );
   let interval: NodeJS.Timeout | null = null;
 
-  const capitalizeText = (value: string): string =>
-    capitalize ? value.toUpperCase() : value;
+  const uppercaseText = (value: string): string =>
+    uppercase ? value.toUpperCase() : value;
 
   const calculateIntervalDuration = (text: string): number => {
     const baseSpeed = 500;
@@ -37,8 +37,8 @@ const HackerEffectText: React.FC<HackerEffectTextProps> = ({
       clearInterval(interval as unknown as number);
     }
 
-    const initialText = capitalizeText(initialValue);
-    const targetText = targetValue ? capitalizeText(targetValue) : "";
+    const initialText = uppercaseText(initialValue);
+    const targetText = targetValue ? uppercaseText(targetValue) : "";
 
     interval = setInterval(() => {
       setLines((prevLines) =>
@@ -63,7 +63,7 @@ const HackerEffectText: React.FC<HackerEffectTextProps> = ({
         clearInterval(interval as unknown as number);
         setLines((prevLines) =>
           prevLines.map(() =>
-            targetText ? capitalizeText(targetText) : initialText
+            targetText ? uppercaseText(targetText) : initialText
           )
         );
       }
@@ -79,7 +79,7 @@ const HackerEffectText: React.FC<HackerEffectTextProps> = ({
     setLines(
       initialValue
         .split("\n")
-        .map((line) => (capitalize ? line.toUpperCase() : line))
+        .map((line) => (uppercase ? line.toUpperCase() : line))
     );
   };
 
@@ -87,6 +87,14 @@ const HackerEffectText: React.FC<HackerEffectTextProps> = ({
     () => () => clearInterval(interval as unknown as number),
     [interval]
   );
+
+  useEffect(() => {
+    startAnimation();
+
+    return () => {
+      clearInterval(interval as unknown as number);
+    };
+  }, [initialValue, targetValue]);
 
   return React.cloneElement(
     children as React.ReactElement,
